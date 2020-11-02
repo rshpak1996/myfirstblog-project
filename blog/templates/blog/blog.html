@@ -58,7 +58,7 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Blog <span class="sr-only">(current)</span></a>
+                        <a class="nav-link active" href="#">Blog <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Facebook</a>
@@ -69,6 +69,7 @@
                 </ul>
             </div>
         </nav>
+
     </header>
 
     <main>
@@ -79,7 +80,9 @@
 
             {% for post in posts.all %}
 
-            <div class="post_title my-2"><h2>{{ post.post_title }}</h2></div>
+            <div class="post_title my-2">
+                <h2>{{ post.post_title }}</h2>
+            </div>
             <img class="my-2" src="{{ post.post_image.url }}" height="225" style="border: solid 1px  ">
             <div class="post_text my-2">{{ post.post_text }}</div>
             <div class="post_date mb-4">{{ post.post_date }}</div>
