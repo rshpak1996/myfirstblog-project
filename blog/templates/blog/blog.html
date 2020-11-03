@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+{% load static %}
 
 <head>
     <meta charset="utf-8">
@@ -61,10 +62,10 @@
                         <a class="nav-link active" href="#">Blog <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">GitHub</a>
+                        <a class="nav-link" href="https://github.com/rshpak1996">GitHub</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">About me</a>
+                        <a class="nav-link" href="{% static 'Aboutme.docx' %}">About me</a>
                     </li>
                 </ul>
             </div>
