@@ -7,3 +7,5 @@ class Post(models.Model):
     post_text = models.TextField()
     post_date = models.DateTimeField()
     
+    def __str__(self):
+        return self.post_title
